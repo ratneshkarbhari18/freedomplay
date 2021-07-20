@@ -1,0 +1,11 @@
+a.navbar-brand{
+    width: 20%;
+}
+a.navbar-brand img{
+    width: 100%;
+}
+
+nav#navbardesktop{
+    padding-top: 0;
+    padding-bottom: 0;
+}

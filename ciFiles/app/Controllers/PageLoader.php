@@ -22,7 +22,8 @@ class PageLoader extends BaseController
 
 	public function home()
 	{
-		echo "HomePage will be here";
+		$data = array("title"=>"Tagline");
+		$this->page_loader("home",$data);
 	}
 
 	public function header_images_mgt($success="",$error="")

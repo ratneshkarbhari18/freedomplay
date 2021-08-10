@@ -50,11 +50,47 @@ class PageLoader extends BaseController
 		}
 	}
 
+	public function homepage_mgt()
+	{
+		$role = session("role");
+		if ($role!="admin") {
+			return redirect()->to(site_url("")); 
+		} else {
+			$success=$error="";
+			$data = array("title"=>"Home Mgt.","success"=>$success,"error"=>$error);
+			$this->admin_page_loader("home_mgt",$data);
+		}
+	}
+
+	public function aboutpage_mgt()
+	{
+		$role = session("role");
+		if ($role!="admin") {
+			return redirect()->to(site_url("")); 
+		} else {
+			$success=$error="";
+			$data = array("title"=>"About Mgt.","success"=>$success,"error"=>$error);
+			$this->admin_page_loader("about_mgt",$data);
+		}
+	}
+
+	public function contactpage_mgt()
+	{
+		$role = session("role");
+		if ($role!="admin") {
+			return redirect()->to(site_url("")); 
+		} else {
+			$success=$error="";
+			$data = array("title"=>"Contact Mgt.","success"=>$success,"error"=>$error);
+			$this->admin_page_loader("contact_mgt",$data);
+		}
+	}
+
 	public function admin_login($error="")
 	{
 		$role = session("role");
 		if ($role=="admin") {
-			return redirect()->to(site_url("")); 
+			return redirect()->to(site_url("dashboard")); 
 		} else {
 			$data = array("title"=>"Admin Login","error"=>$error);
 			$this->page_loader("admin_login",$data);

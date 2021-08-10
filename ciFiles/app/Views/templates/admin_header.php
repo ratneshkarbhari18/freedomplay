@@ -21,21 +21,14 @@
                     <ul class="navbar-nav ml-auto">
                         
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo site_url("header-images-mgt"); ?>">Header Images</a>
+                            <a class="nav-link" href="<?php echo site_url("home-page-mgt"); ?>">Home Page Mgt</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo site_url("faqs-mgt"); ?>">FAQs</a>
+                            <a class="nav-link" href="<?php echo site_url("about-page-mgt"); ?>">About Page Mgt</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo site_url("offer-images-mgt"); ?>">Offers Images</a>
+                            <a class="nav-link" href="<?php echo site_url("contact-page-mgt"); ?>">Contact Page Mgt</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="<?php echo site_url("about-us-mgt"); ?>">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="<?php echo site_url("how-to-play-mgt"); ?>">How to Play</a>
-                        </li>
-                        
                     </ul>
                 </div>
             </div>        

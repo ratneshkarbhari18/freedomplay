@@ -35,8 +35,10 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'PageLoader::home');
 $routes->get('admin-login', 'PageLoader::admin_login');
 $routes->get("dashboard","PageLoader::dashboard");
-$routes->get("header-images-mgt","PageLoader::header_images_mgt");
-$routes->get("faqs-mgt","PageLoader::faqs_mgt");
+$routes->get("home-page-mgt","PageLoader::homepage_mgt");
+$routes->get("about-page-mgt","PageLoader::aboutpage_mgt");
+$routes->get("contact-page-mgt","PageLoader::contactpage_mgt");
+// $routes->get("faqs-mgt","PageLoader::faqs_mgt");
 
 $routes->post("admin-login-exe","Authentication::admin_login");
 $routes->post("add-new-header-image-exe","HeaderImages::create");
